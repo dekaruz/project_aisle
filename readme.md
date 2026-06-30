@@ -1,53 +1,96 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Project Aisle - E-Commerce Platform
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+A full-featured e-commerce platform built with modern web technologies, designed to provide a seamless shopping experience for buyers and sellers.
 
-## About Laravel
+## About Project Aisle
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+Project Aisle is a comprehensive e-commerce marketplace solution that enables multiple sellers to list and sell products while buyers can browse, purchase, and manage their orders. The platform includes advanced features such as product management, shopping cart functionality, user authentication, payment processing, and seller ratings.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Technology Stack
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+### Backend
+- **PHP 7.x** - Server-side language
+- **Laravel 5.x** - Web application framework
+- **MySQL/MariaDB** - Relational database
+- **Eloquent ORM** - Object-Relational Mapping
+- **Composer** - PHP dependency manager
 
-## Learning Laravel
+### Frontend
+- **JavaScript (ES6+)** - Client-side scripting
+- **Blade** - Laravel templating engine
+- **Webpack** - Module bundler
+- **Node.js/npm** - Frontend build tools
+- **CSS/SCSS** - Styling
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+### Features
+- User authentication and authorization with role-based access control
+- Multi-seller marketplace functionality
+- Product catalog with categories and search
+- Shopping cart and checkout system
+- Payment processing integration
+- Order management and tracking
+- User ratings and reviews
+- Seller dashboard and analytics
+- Image management system
+- Responsive design for mobile and desktop
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+## Installation
 
-## Laravel Sponsors
+### Requirements
+- PHP 7.x or higher
+- MySQL 5.7 or higher
+- Node.js and npm
+- Composer
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+### Setup
+```bash
+# Clone the repository
+git clone git@github.com:dekaruz/project_aisle.git
+cd project_aisle
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Pulse Storm](http://www.pulsestorm.net/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
+# Install PHP dependencies
+composer install
 
-## Contributing
+# Install Node dependencies
+npm install
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Copy environment file
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+
+# Run database migrations
+php artisan migrate
+
+# Seed the database (optional)
+php artisan db:seed
+
+# Build frontend assets
+npm run dev
+
+# Start the development server
+php artisan serve
+```
+
+## Project Structure
+
+- `app/` - Application models and business logic
+- `config/` - Configuration files
+- `database/` - Migrations and seeders
+- `resources/` - Views and frontend assets
+- `routes/` - Route definitions (API and web)
+- `storage/` - Application storage
+- `tests/` - Unit and feature tests
+- `public/` - Publicly accessible files
+
+## API Documentation
+
+The API follows RESTful conventions. Check `routes/api.php` for available endpoints.
+
+## License
+
+This project is licensed under the MIT License.
 
 ## Security Vulnerabilities
 

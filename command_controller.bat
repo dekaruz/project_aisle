@@ -1,0 +1,11 @@
+start  php artisan make:controller CartController --resource --model=Cart
+start  php artisan make:controller CartItemController --resource --model=CartItem
+start  php artisan make:controller CategoryController --resource --model=Category
+start  php artisan make:controller CommentController --resource --model=Comment
+start  php artisan make:controller ImageController --resource --model=Image
+start  php artisan make:controller PaymentController --resource --model=Payment
+start  php artisan make:controller ProductController --resource --model=Product
+start  php artisan make:controller PostController --resource --model=Post
+start  php artisan make:controller RoleController --resource --model=Role
+start  php artisan make:controller SellerProductDeliveryTimeController --resource --model=SellerProductDeliveryTime
+start  php artisan make:controller SellersRatingController --resource --model=SellersRating
